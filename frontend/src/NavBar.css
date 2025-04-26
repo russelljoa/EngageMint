@@ -1,0 +1,40 @@
+/* Added styles to make the header stretch to the edges */
+.header {
+    background-color: #7260C6;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    height: 75px;
+    font-size: 1em;
+    font-family: 'Arial', sans-serif;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
+.header .logo:hover{
+    cursor: pointer;
+    filter: brightness(1.1);
+}
+.header .title{
+
+}
+.header .title:hover{
+    cursor: pointer;
+}
+.header .exclusiveContent{
+
+}
+.header .exclusiveContent:hover{
+    cursor: pointer;
+}

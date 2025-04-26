@@ -1,9 +1,12 @@
 import { useState } from 'react'
 import './Home.css';
+import NavBar from '../../NavBar';
 
 const Home = () => {
     return (
-        <h1>Home</h1>
+        <>
+            <NavBar className="home"></NavBar>
+        </>
     )
 }
 
