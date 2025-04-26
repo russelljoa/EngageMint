@@ -1,34 +1,57 @@
 import { useState } from 'react';
-import reactLogo from '@/assets/react.svg';
-import wxtLogo from '/wxt.svg';
+import {
+	HashRouter as Router,
+	Routes,
+	Route,
+	Navigate,
+} from "react-router-dom";
+import Login from "./pages/login/Login";
+import Home from "./pages/home/Home";
 import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [isAuthenticated, setIsAuthenticated] = useState(() => {
+		return !!sessionStorage.getItem("authToken");
+	});
+
+  function ErrorBoundary() {
+		const localLink = window.location.href.substring(
+			window.location.href.lastIndexOf("/")
+		);
+		return (
+			<>
+				<h1 style={{ textAlign: "center", marginTop: "5rem" }}>
+					Error 404: Page Not Found
+				</h1>
+				<h2 style={{ textAlign: "center", marginBottom: "5rem" }}>
+					The requested URL {localLink} was not found on this server.
+				</h2>
+			</>
+		);
+	}
 
   return (
-    <>
-      <div>
-        <a href="https://wxt.dev" target="_blank">
-          <img src={wxtLogo} className="logo" alt="WXT logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>WXT + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the WXT and React logos to learn more
-      </p>
-    </>
+    <Router>
+			<Routes>
+				<Route
+					path="/"
+					element={
+						isAuthenticated ? (
+							<Navigate to="/home" replace />
+						) : (
+							<Login setIsAuthenticated={setIsAuthenticated} />
+						)
+					}
+				/>
+				<Route
+					path="/home"
+					element={
+						isAuthenticated ? <Home /> : <Navigate to="/" replace />
+					}
+				/>
+				<Route path="*" element={<ErrorBoundary />} />
+			</Routes>
+		</Router>
   );
 }
 
