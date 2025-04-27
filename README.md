@@ -29,4 +29,4 @@ Extension:
 https://assethub-westend.subscan.io/tx/0xa5fac2854c582e2a118a02fa9a8e8ab3f07ab624be01db1e1c7cedf1a285e640
 
 # Technical Video
-![EngageMint Videos](images/tech_demo.mp4)
+https://github.com/user-attachments/assets/b0b84c18-e489-4938-b910-5804d8c5d5f8
