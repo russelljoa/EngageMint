@@ -2,15 +2,13 @@ body {
     background-color: #FFFDF5;
     margin: 0;
 }
-.home_logo {
+.test {
     margin-top: 100px;
-    margin-bottom: 20px;
-    height: 200px;
 }
-.home_container {
+.merch_container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 20px;
 }

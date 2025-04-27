@@ -4,11 +4,13 @@ import { useGoogleLogin } from '@react-oauth/google';
 import { web3Enable, web3Accounts } from '@polkadot/extension-dapp';
 import './Login.css';
 
-const Login = ({ setIsAuthenticated }) => {
+const Login = ({ setIsAuthenticated }: { setIsAuthenticated: (value: boolean) => void }) => {
     const [walletAddress, setWalletAddress] = useState("");
-
+    
     const connectWallet = async () => {
         try {
+            // Enable the Polkadot extension using web3Enable
+            // Request access to accounts using the Polkadot extension's API
             const enabled = await web3Enable('EngageMint');
             console.log("Enabled extensions:", enabled);
             if (!enabled.length) {
@@ -33,21 +35,16 @@ const Login = ({ setIsAuthenticated }) => {
     };
 
     return (
-        <div className="login_container">
-            <div className="button_container">
-                <img id="full_logo" src="/EngageMintFullLogo.png" />
-                <button className="connect_button" onClick={connectWallet}>
-                    Connect Wallet
+        <div className="login_page_container">
+            <div>
+                <button className="btn btn-primary" onClick={connectWallet}>
+                    {walletAddress ? "Connected: " + walletAddress : "Connect Wallet"}
                 </button>
             </div>
-            <div className="text_container">
-                <div className="text_field">
-                    <span>Empowering</span>
-                    <span>Creators,</span>
-                    <span>Rewarding</span>
-                    <span>Fans.</span>
-                </div>
+            <div>
+                
             </div>
+            
         </div>
     )
 }

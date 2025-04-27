@@ -34,6 +34,23 @@ app.post('/inputuser', async (req, res) => {
     }
 });
 
+app.post('/checkUser', async (req, res) => {
+    const email = req.body;
+    try {
+        const db = client.db('EngageMint');
+        const collection = db.collection('users');
+        const existingUser = await collection.findOne({ email: email.email });
+        if (existingUser) {
+            res.status(200).json({ message: 'User exists' });
+        } else {
+            res.status(404).json({ message: 'User does not exist' });
+        }
+    } catch (error) {
+        console.error('Error checking user:', error);
+        res.status(500).json({ message: 'Error checking user' });
+    }
+});
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
