@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './Home.css';
 import { LineChart } from '@mui/x-charts/LineChart';
-import NavBar from '../../NavBar';
+import NavBar from '../../components/navBar/NavBar';
 import EngageMintFullLogo from '/EngageMintFullLogo.png';
 
 const Home = () => {

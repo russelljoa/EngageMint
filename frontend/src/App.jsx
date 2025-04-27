@@ -12,6 +12,9 @@ import Community from './pages/community/Community';
 import Videos from './pages/videos/Videos';
 
 import './App.css'
+import ExclusiveContent from './pages/exclusiveContent/ExclusiveContent';
+import Community from './pages/community/Community';
+import Videos from './pages/videos/Videos';
 
 function App() {
 	const [isAuthenticated, setIsAuthenticated] = useState(() => {
@@ -67,6 +70,13 @@ function App() {
 				/>
 				<Route
 					path="/home"
+					element={
+					isAuthenticated ? <Home /> : <Navigate to="/" replace />
+					}
+				/>
+				<Route path="*" element={<ErrorBoundary />} />
+				<Route
+					path="/"
 					element={
 						isAuthenticated ? <Home /> : <Navigate to="/" replace />
 					}
