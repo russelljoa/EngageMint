@@ -1,16 +1,153 @@
 body {
     background-color: #FFFDF5;
     margin: 0;
+    font-family: Arial, sans-serif;
 }
+
 .home_logo {
-    margin-top: 100px;
+    margin-top: 20px;
     margin-bottom: 20px;
-    height: 200px;
+    height: 80px;
 }
+
 .home_container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.stats_container {
+    display: flex;
     flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 60px;  /* Increased top margin */
     flex-wrap: wrap;
+}
+
+.token_stats_card, .youtube_stats_card {
+    background-color: #ffffff;
+    border-radius: 12px ;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    transition: transform 0.3s ease;
+    margin-top: 20px;  /* Added top margin to boxes */
+}
+
+.token_stats_card:hover, .youtube_stats_card:hover {
+    transform: translateY(-5px);
+}
+
+.token_stats_card h2, .youtube_stats_card h2 {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 10px solid #3FBB9B;
+    border-color: #3FBB9B;
+    padding-bottom: 10px;
+    font-family: "Iter", sans-serif;  /* Using Iter font for titles */
+    font-weight: 800;
+}
+
+.token_chart {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.token_metrics, .youtube_metrics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    
+}
+
+.metric_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.metric_item:hover {
+    background-color: #f0f0f0;
+}
+
+.metric_item h3 {
+    margin: 0;
+    color: #555;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Iter", sans-serif;  /* Using Iter font for metric titles */
+}
+
+.metric_value {
+    margin: 8px 0 0;
+    color: #333;
+    font-size: 26px;
+    font-weight: 600;
+    font-family: Arial, sans-serif;
+}
+
+.metric_change {
+    margin: 4px 0 0;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+}
+
+.metric_change.positive {
+    color: #00C853;
+    border: 1px solid #00C853;  /* Added outline to percentage change */
+    background-color: rgba(0, 200, 83, 0.1);
+}
+
+.metric_change.negative {
+    color: #F44336;
+    border: 1px solid #F44336;  /* Added outline to percentage change */
+    background-color: rgba(244, 67, 54, 0.1);
+}
+
+.platform_logo {
+    display: flex;
     justify-content: center;
     margin-bottom: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .stats_container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .token_stats_card, .youtube_stats_card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    
+    .token_metrics, .youtube_metrics {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Font import for Iter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Using Inter as a fallback for Iter since Iter might not be widely available */
+h2, h3, .metric_item h3 {
+    font-family: "Iter", "Inter", sans-serif;
 }
