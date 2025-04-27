@@ -1,7 +1,4 @@
-body {
-    background-color: #FFFDF5;
-    margin: 0;
-}
+
 .test {
     margin-top: 100px;
 }
@@ -17,9 +14,15 @@ body {
     font-size: 5em;
     font-family: 'Arial', sans-serif;
     font-weight: bold;
-    margin-top: 60px;
+    margin-top: 120px;
     margin-bottom: 32px;
     text-align: left;
     letter-spacing: 1px;
     padding-left: 0;
+}
+
+.exclusive_content_container {
+    margin: 50px;
+    margin-right: 200px;
+    margin-left: 200px;
 }

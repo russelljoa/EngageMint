@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 import Login from './pages/login/Login';
 import Home from './pages/home/Home';
-import GatedContent from './pages/posts/Posts';
 import ExclusiveContent from './pages/exclusiveContent/ExclusiveContent';
 import Community from './pages/community/Community';
 import Videos from './pages/videos/Videos';
