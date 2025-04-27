@@ -13,9 +13,6 @@ import Community from './pages/community/Community';
 import Videos from './pages/videos/Videos';
 
 import './App.css'
-import ExclusiveContent from './pages/exclusiveContent/ExclusiveContent';
-import Community from './pages/community/Community';
-import Videos from './pages/videos/Videos';
 
 function App() {
 	const [isAuthenticated, setIsAuthenticated] = useState(() => {
