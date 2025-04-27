@@ -1,6 +1,6 @@
 import './ExclusiveContent.css';
-import Item from '../../Item';
-import NavBar from '../../NavBar';
+import Item from '../../components/item/Item';
+import NavBar from '../../components/navBar/NavBar';
 import shirt1 from '../../assets/shirt1.png';
 import shirt2 from '../../assets/shirt2.png';
 import hoodie1 from '../../assets/hoodie1.png';

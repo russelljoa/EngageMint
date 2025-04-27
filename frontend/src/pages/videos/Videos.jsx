@@ -1,6 +1,6 @@
-import NavBar from '../../NavBar';
+import NavBar from '../../components/navBar/NavBar';
 import './Videos.css';
-import Video from '../../Video';
+import Video from '../../components/video/Video';
 import hockey from  '../../assets/hockey.png';
 import korea from  '../../assets/korea.png';
 import disguise from  '../../assets/disguise.png';
