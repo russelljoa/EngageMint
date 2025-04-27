@@ -7,7 +7,7 @@ Allows content creators to mint their own tokens on Polkadot that the community 
 The Solidity smart contract defines the outline for a simple ERC-20-like token contract with immutable metadata, including the name, symbol, and decimals.  It tracks the total supply of tokens and the balances of individual addresses using state variables.  The contract defines an admin address that is set to the content creator upon deployment of their coin.  The mint function allows the admin to create tokens and assign them to a specified address.  The contract also defines custom errors to handle unauthorized minting and insufficient transfer balances.
 
 # Demo Video:
-![EngageMint Videos](images/demo_vid.mp4)
+https://github.com/user-attachments/assets/a95f6ba4-534d-4559-9bc2-3920e89849ee
 
 # UI Design:
 Login:
