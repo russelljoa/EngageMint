@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { useGoogleLogin } from '@react-oauth/google';
 import './Login.css';
+import GoogleButton from 'react-google-button';
 
 const Login = ({ setIsAuthenticated }) => {
     const navigate = useNavigate();
@@ -57,13 +58,21 @@ const Login = ({ setIsAuthenticated }) => {
 
 
     return (
-        <div className="login_container">
-            Hello World
-            <button className="login_button" onClick={oauth}>
-                {/* <img className="login_googleLogo" src={GoogleLogo} alt="Google Logo" /> */}
-                Login with Google
-            </button>
-        </div>
+        <>
+            <div className="login_container">
+                <p className="engage_text purple">Engage<span className = "mint">Mint</span></p>
+                <div className="button_container">
+                    <GoogleButton
+                        className="login_button"
+                        type="light"
+                        style={{ width: '200px', height: '50px', marginTop: '20px' }}
+                        onClick={oauth}
+                    />
+                </div>
+            
+            </div>
+        </>
+
     )
 }
 

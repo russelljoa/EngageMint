@@ -26,15 +26,27 @@
     cursor: pointer;
     filter: brightness(1.1);
 }
-.header .title{
-
+.header .logo:active{
+    filter: brightness(.9);
 }
-.header .title:hover{
+.header .title,
+.header .exclusive_content{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+}
+.header .title:hover,
+.header .exclusive_content:hover{
     cursor: pointer;
 }
-.header .exclusiveContent{
-
+.header .title:active,
+.header .exclusive_content:active{
+    filter: brightness(.9);
 }
-.header .exclusiveContent:hover{
-    cursor: pointer;
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Adjust as needed for desired spacing */
 }
