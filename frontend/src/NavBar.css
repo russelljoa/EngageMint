@@ -1,7 +1,7 @@
 /* Added styles to make the header stretch to the edges */
 .header {
     background-color: #7260C6;
-    color: white;
+    color: #FFFDF5;
     padding: 10px;
     margin: 0;
     height: 75px;
@@ -16,6 +16,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    z-index: 1000;
 }
 .header .logo{
     width: 50px;
@@ -30,18 +31,25 @@
     filter: brightness(.9);
 }
 .header .title,
-.header .exclusive_content{
+.header .exclusive_content,
+.header .community,
+.header .videos{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     min-width: 0;
 }
 .header .title:hover,
-.header .exclusive_content:hover{
+.header .exclusive_content:hover,
+.header .community:hover,
+.header .videos:hover{
+    filter: brightness(1.1);
     cursor: pointer;
 }
 .header .title:active,
-.header .exclusive_content:active{
+.header .exclusive_content:active,
+.header .community:active,
+.header .videos:active{
     filter: brightness(.9);
 }
 
