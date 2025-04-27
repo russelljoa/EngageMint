@@ -52,8 +52,8 @@ function App() {
 	// 			<Route path="*" element={<ErrorBoundary />} />
 	// 		</Routes>
 	// 	</Router>
-    // <Home />
-	<Login setIsAuthenticated={setIsAuthenticated}/>
+    <Home />
+	// <Login setIsAuthenticated={setIsAuthenticated}/>
   );
 }
 
