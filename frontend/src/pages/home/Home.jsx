@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './Home.css';
 import NavBar from '../../NavBar';
-import EngageMintFullLogo from '../../assets/EngageMintFullLogo.png';
+import EngageMintFullLogo from '/EngageMintFullLogo.png';
 
 const Home = () => {
     return (

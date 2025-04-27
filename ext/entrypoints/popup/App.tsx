@@ -53,7 +53,7 @@ function App() {
 	// 		</Routes>
 	// 	</Router>
     // <Home />
-	<Login />
+	<Login setIsAuthenticated={setIsAuthenticated}/>
   );
 }
 

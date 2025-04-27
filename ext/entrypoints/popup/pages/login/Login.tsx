@@ -6,7 +6,7 @@ import './Login.css';
 
 const Login = ({ setIsAuthenticated }: { setIsAuthenticated: (value: boolean) => void }) => {
     const [walletAddress, setWalletAddress] = useState("");
-
+    
     const connectWallet = async () => {
         try {
             // Enable the Polkadot extension using web3Enable
@@ -35,10 +35,16 @@ const Login = ({ setIsAuthenticated }: { setIsAuthenticated: (value: boolean) =>
     };
 
     return (
-        <div className="login_container">
-            <button className="btn btn-primary" onClick={connectWallet}>
-                {walletAddress ? "Connected: " + walletAddress : "Connect Wallet"}
-            </button>
+        <div className="login_page_container">
+            <div>
+                <button className="btn btn-primary" onClick={connectWallet}>
+                    {walletAddress ? "Connected: " + walletAddress : "Connect Wallet"}
+                </button>
+            </div>
+            <div>
+                
+            </div>
+            
         </div>
     )
 }
