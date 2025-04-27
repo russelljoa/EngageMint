@@ -24,7 +24,7 @@ const Home = () => {
 
     const addEarned = () => {
         setInterval(() => {
-            setEarned(prevEarned => (prevEarned + 1));
+            setEarned(prevEarned => prevEarned + 1);
         }, 2000);
     }
     
