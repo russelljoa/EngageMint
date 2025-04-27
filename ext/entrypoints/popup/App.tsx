@@ -32,27 +32,28 @@ function App() {
 
   return (
     // <Router>
-		// 	<Routes>
-		// 		<Route
-		// 			path="/"
-		// 			element={
-		// 				isAuthenticated ? (
-		// 					<Navigate to="/home" replace />
-		// 				) : (
-		// 					<Login setIsAuthenticated={setIsAuthenticated} />
-		// 				)
-		// 			}
-		// 		/>
-		// 		<Route
-		// 			path="/home"
-		// 			element={
-		// 				isAuthenticated ? <Home /> : <Navigate to="/" replace />
-		// 			}
-		// 		/>
-		// 		<Route path="*" element={<ErrorBoundary />} />
-		// 	</Routes>
-		// </Router>
-    <Home />
+	// 		<Routes>
+	// 			<Route
+	// 				path="/"
+	// 				element={
+	// 					isAuthenticated ? (
+	// 						<Navigate to="/home" replace />
+	// 					) : (
+	// 						<Login setIsAuthenticated={setIsAuthenticated} />
+	// 					)
+	// 				}
+	// 			/>
+	// 			<Route
+	// 				path="/home"
+	// 				element={
+	// 					isAuthenticated ? <Home /> : <Navigate to="/" replace />
+	// 				}
+	// 			/>
+	// 			<Route path="*" element={<ErrorBoundary />} />
+	// 		</Routes>
+	// 	</Router>
+    // <Home />
+	<Login />
   );
 }
 

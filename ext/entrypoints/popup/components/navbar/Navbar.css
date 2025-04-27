@@ -6,7 +6,7 @@
     left: 0;
     width: 100vw;
     height: 50px;
-    background-color: #7260C6;
+    background-color: #333332;
     margin: 0;
     padding: 0;
     display: flex;
@@ -30,7 +30,7 @@
 }
 
 #engage {
-    color: black;
+    color: #7260C6;
     font-size: 20px;
     font-weight: bold;
     font-family: 'Inter'
