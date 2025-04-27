@@ -13,8 +13,12 @@ function NavBar(){
         navigate('/exclusiveContent');
     }
 
-    const openGatedContent = () => {
-        navigate('/gatedContent');
+    const openCommunity = () => {
+        navigate('/community');
+    }
+
+    const openVideos = () => {
+        navigate('/videos');
     }
 
     return (
@@ -31,9 +35,12 @@ function NavBar(){
             <h1 className="exclusive_content"
                 onClick={openExclusiveContent}
             >Merch</h1>
-            <h1 className="gated_content"
-                onClick={openGatedContent}
-            >Gated Content</h1>
+            <h1 className="community"
+                onClick={openCommunity}
+            >Community</h1>
+            <h1 className="videos"
+                onClick={openVideos}
+            >Videos</h1>
         </div>
     );
 }

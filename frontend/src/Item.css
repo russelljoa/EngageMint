@@ -1,3 +1,6 @@
+body{
+    background-color: #FFFDF5;
+}
 .item_container{
     background-color: #b4f2e475;
     width: 30%;
@@ -49,12 +52,20 @@
     text-align: center;
     font-size: 1.4em;
     background-color: #7260C6;
-    color: white;
+    color: #FFFDF5;
     border: none;
     border-radius: 20px;
     font-weight: normal;
     font-family: 'Arial Black', Arial, sans-serif;
-
+}
+.burn_button:hover{
+    cursor: pointer;
+    background-color: #4e3a8a;
+    transition: ease-in-out 0.2s;
+}
+.burn_button:active{
+    background-color: #3d2c6b;
+    transition: ease-in-out 0.2s;
 }
 .item_footer {
     display: flex;

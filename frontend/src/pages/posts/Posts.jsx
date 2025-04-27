@@ -1,7 +1,7 @@
 import NavBar from '../../NavBar';
-import './GatedContent.css';
+import './Posts.css';
 
-const GatedContent = () => {
+const Posts = () => {
 
     return (
         <>
@@ -11,4 +11,4 @@ const GatedContent = () => {
 
 }
 
-export default GatedContent
+export default Posts
