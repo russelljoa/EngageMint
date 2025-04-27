@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer-names">
-                <span>By:</span>
+                <span>Developed by:</span>
                 <span>Brady Cieslak</span>
                 <span>Russell Joarder</span>
                 <span>Patrick Fish</span>
