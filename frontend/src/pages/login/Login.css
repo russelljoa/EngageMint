@@ -1,0 +1,88 @@
+.login_container {
+    padding-top: 250px; /* Adjusted to account for the header height */
+    margin-top: 0;
+    height: 800px;
+    background: linear-gradient(to bottom, #B4F2E4 50%, white 50%);
+}
+.engage_text{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    padding: 0;
+}
+.purple{
+    align-items: center;
+    margin-top: 0;
+    padding: 0;
+    font-size: 6em;
+    color: #7260C6;
+}
+.mint{
+    color: #3FBB9B;
+}
+body{
+    margin: 0;
+    top: 0;
+}
+
+/* Re-adding transitions for smooth animations */
+.login_button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #181818;
+    border: 4px solid #7260C6;
+    border-radius: 10px;
+    font-family: 'Arial Black', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 1.4em;
+    cursor: pointer;
+    height: unset;
+    min-width: 360px;
+    padding: 0 32px;
+    gap: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-shadow: none;
+    transition: box-shadow 0.2s, background-color 0.2s, color 0.2s, border-color 0.2s;
+    line-height: normal;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    align-items: center;
+    /* Ensures text and logo are vertically centered */
+}
+
+.login_button:hover {
+    background-color: #f3f0fa;
+    border-color: #4e3a8a;
+}
+
+.login_button:active {
+    background-color: #ece6fa;
+    border-color: #3d2c6b;
+    color: #4e3a8a;
+}
+
+.button_container{
+    padding-top: 200px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.login_google_logo {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    margin-left: 12px;
+}

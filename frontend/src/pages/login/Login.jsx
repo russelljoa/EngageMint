@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useGoogleLogin } from '@react-oauth/google';
 import { web3Enable, web3Accounts } from '@polkadot/extension-dapp';
 import './Login.css';
+import GoogleButton from 'react-google-button';
 
 const Login = ({ setIsAuthenticated }) => {
     const [walletAddress, setWalletAddress] = useState("");
