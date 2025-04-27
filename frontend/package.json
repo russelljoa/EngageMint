@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
     "@mui/x-charts": "^8.1.0",
     "@polkadot/api": "^15.9.2",
     "@polkadot/extension-dapp": "^0.58.8",
