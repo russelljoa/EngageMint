@@ -41,6 +41,12 @@ body {
     margin-top: 20px;  /* Added top margin to boxes */
 }
 
+.youtube_stats_card {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
 .token_stats_card:hover, .youtube_stats_card:hover {
     transform: translateY(-5px);
 }
@@ -67,7 +73,10 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    
+}
+
+.youtube_metrics {
+    margin-top: auto;
 }
 
 .metric_item {
@@ -124,6 +133,9 @@ body {
 .platform_logo {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex: 1 0 auto;
+    width: 100%;
     margin-bottom: 20px;
 }
 

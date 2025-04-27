@@ -27,7 +27,7 @@ const Community = () => {
                     ]}
                 />
                 <Post sub="CHINAAAAAA"
-                    post="HEY CHAT *BARK* *BARK* I'M IN CHINA RIGHT NOW CHECKING OUT THE NEW CARS THEY SO TUFF"
+                    post="HEY CHAT I'M IN CHINA RIGHT NOW CHECKING OUT THE NEW CARS THEY SO TUFF"
                     comments={[
                         "That sounds awesome! I wish I could visit China someday and see all the new tech and cars in person. Let us know what your favorite car is!",
                         "Take some pics! Would love to see what the car scene is like over there. Hope you’re having a great time!",

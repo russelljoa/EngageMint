@@ -50,3 +50,44 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.view_more_button {
+    background: none;
+    color: #7260C6;
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    text-decoration: underline;
+    transition: color 0.2s;
+    display: block;
+    text-align: right;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.view_more_button:hover {
+    color: #3FBB9B;
+}
+
+.comment_view_more_button {
+    background: none;
+    color: #7260C6;
+    border: none;
+    font-size: 0.8em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 6px;
+    margin-left: 0;
+    margin-right: 0;
+    text-decoration: underline;
+    transition: color 0.2s;
+    display: block;
+    text-align: right;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 2px;
+}
