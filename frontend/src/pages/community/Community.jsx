@@ -1,5 +1,6 @@
 import NavBar from '../../components/navBar/NavBar';
 import Post from '../../components/post/Post';
+import Footer from '../../components/footer/Footer';
 import './Community.css';
 
 const Community = () => {
@@ -38,6 +39,7 @@ const Community = () => {
                     "Best of luck to your team!"
                 ]}
             />
+            <Footer />
         </>
     )
 

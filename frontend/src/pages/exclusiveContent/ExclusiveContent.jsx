@@ -1,6 +1,7 @@
 import './ExclusiveContent.css';
 import Item from '../../components/item/Item';
 import NavBar from '../../components/navBar/NavBar';
+import Footer from '../../components/footer/Footer';
 import shirt1 from '../../assets/shirt1.png';
 import shirt2 from '../../assets/shirt2.png';
 import hoodie1 from '../../assets/hoodie1.png';
@@ -16,7 +17,7 @@ const ExclusiveContent = () => {
     return (
         <>
             <NavBar />
-            <h1 className='head'>Merch</h1>
+            <h1 className="merch_header">Merch</h1>
             <div className='merch_container'>
                 <Item image={shirt1}
                     name='Blurred Photo White Tee'
@@ -59,6 +60,7 @@ const ExclusiveContent = () => {
                     price='1200'
                 />
             </div>
+            <Footer />
         </>
     )
 }

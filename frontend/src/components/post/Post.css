@@ -6,6 +6,9 @@
     margin-top: 0;
     margin-bottom: 18px;
     text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .post_container .post {
@@ -16,6 +19,9 @@
     margin: 0;
     padding: 0;
     font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .post_section {
@@ -37,4 +43,10 @@
 .comment_section {
     margin-top: 0;
     padding-top: 18px;
+}
+
+.comment_container .post {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
