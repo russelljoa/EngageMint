@@ -1,0 +1,33 @@
+.footer-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #000; /* Change background color as needed */
+    overflow: hidden;
+    z-index: 9999;
+
+}
+
+.marquee {
+    display: flex;
+    width: 200%; /* two copies side-by-side */
+    animation: marquee 10s linear infinite;
+}
+
+.marquee span {
+    flex: 0 0 100%;
+    text-align: center;
+    color: #000;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
