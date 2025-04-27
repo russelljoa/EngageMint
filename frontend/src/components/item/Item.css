@@ -57,6 +57,9 @@ body{
     border-radius: 20px;
     font-weight: normal;
     font-family: 'Arial Black', Arial, sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .burn_button:hover{
     cursor: pointer;
