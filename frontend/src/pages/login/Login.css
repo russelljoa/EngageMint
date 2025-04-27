@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 .login_container {
-
+    display: flex;
 }
 
 .button_container {
     height: 100vh;
-    width: 50vw;
+    width: 50%;
     background-color: #B4F2E4;
     display: flex;
     flex-direction: column;
@@ -19,32 +19,53 @@
     margin-top: 70px;
     width: 50%;
     height: 7%;
-    border: 3px solid #7260C6;
-    border-radius: 5px;
-    background-color: #fffdf5;
+    border: none;
+    border-radius: 10px;
+    background-color: #7260C6;
     font-size: 30px;
-    color: #7260C6;
+    color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    text-shadow: #ffffff56 0px 0px 3px;
 }
+
+/* Add keyframes for the shake animation */
+@keyframes shake {
+    0% { transform: translateX(0); 
+    rotate: .4deg;}
+    25% { transform: translateX(-1px); }
+    50% { transform: translateX(1px); }
+    75% { transform: translateX(-1px); 
+        rotate: -.2deg;}
+    100% { transform: translateX(0); }
+}
+
 .connect_button:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.333);
+    text-shadow: #f6dcffe8 0px 0px 10px;
     cursor: pointer;
-    transform: translateY(-5px);
+    transform: translateY(-1px);
+    background-color: #6a59b4;
+    animation: shake 0.2s ease-in-out infinite; /* Make the shake animation continuous */
 }
 
 #full_logo {
     width: 400px;
+    image-rendering: -webkit-optimize-contrast; /* For WebKit browsers */
+    image-rendering: auto;
 }
 
 .text_container {
-    display: flex;
+    display: inline;
     align-items: center;
     justify-content: center;
     height: 100vh;
     width: 50%;
+    vertical-align: middle;
 }
 
 .text_field {
+    margin-top: 35vh;
     width: auto;
     font-family: 'Inter';
     font-size: 60px;
@@ -54,4 +75,5 @@
     align-items: center;
     flex-direction: column;
     color: #333332;
+    
 }
