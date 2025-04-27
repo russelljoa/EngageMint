@@ -6,9 +6,10 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer-names">
-                <span>Person 1</span>
-                <span>Person 2</span>
-                <span>Person 3</span>
+                <span>By:</span>
+                <span>Brady Cieslak</span>
+                <span>Russell Joarder</span>
+                <span>Patrick Fish</span>
             </div>
             <img src={EngageMintLogo} alt="EngageMint Logo" className="footer-logo" />
         </footer>

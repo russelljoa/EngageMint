@@ -3,6 +3,7 @@ import './Home.css';
 import { LineChart } from '@mui/x-charts/LineChart';
 import NavBar from '../../components/navBar/NavBar';
 import EngageMintFullLogo from '/EngageMintFullLogo.png';
+import Footer from '../../components/footer/Footer';
 
 const Home = () => {
     // Token statistics data with percent changes
@@ -118,6 +119,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </>
     )
 }
