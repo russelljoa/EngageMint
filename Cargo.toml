@@ -1,0 +1,11 @@
+[package]
+name = "engagemint" # Replace with your desired package name
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "engagemint"
+path = "contracts/ishowspeed_token/lib.rs"
+
+[dependencies]
+ink = "^5.0.2"
