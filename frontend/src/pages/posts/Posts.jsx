@@ -1,4 +1,4 @@
-import NavBar from '../../NavBar';
+import NavBar from '../../components/navBar/NavBar';
 import './Posts.css';
 
 const Posts = () => {

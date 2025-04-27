@@ -1,6 +1,6 @@
 import './NavBar.css';
 import { useNavigate } from 'react-router-dom';
-import EngageMintLogo from './assets/EngageMintLogo.png';
+import EngageMintLogo from '../../assets/EngageMintLogo.png';
 
 
 function NavBar(){

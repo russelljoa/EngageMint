@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './Post.css';
-import Comment from './components/comment/Comment';
+import Comment from '../comment/Comment';
 
 const Post = (props) => {
     const [showAll, setShowAll] = useState(false);

@@ -7,14 +7,18 @@ import {
 } from "react-router-dom";
 import Login from './pages/login/Login';
 import Home from './pages/home/Home';
+import GatedContent from './pages/posts/Posts';
 import './App.css'
+import ExclusiveContent from './pages/exclusiveContent/ExclusiveContent';
+import Community from './pages/community/Community';
+import Videos from './pages/videos/Videos';
 
 function App() {
-  const [isAuthenticated, setIsAuthenticated] = useState(() => {
+	const [isAuthenticated, setIsAuthenticated] = useState(() => {
 		return !!sessionStorage.getItem("authToken");
 	});
 
-  function ErrorBoundary() {
+	function ErrorBoundary() {
 		const localLink = window.location.href.substring(
 			window.location.href.lastIndexOf("/")
 		);
@@ -30,29 +34,47 @@ function App() {
 		);
 	}
 
-  return (
-    <Router>
-      <Routes>
-        <Route
-        path="/"
-        element={
-          isAuthenticated ? (
-            <Navigate to="/home" replace />
-          ) : (
-            <Login setIsAuthenticated={setIsAuthenticated} />
-          )
-        }
-        />
-        <Route
+	return (
+		<Router>
+			<Routes>
+				<Route
+				path="/"
+				element={
+				isAuthenticated ? (
+				<Navigate to="/home" replace />
+				) : (
+				<Login setIsAuthenticated={setIsAuthenticated} />
+				)
+				}
+				/>
+				<Route
 					path="/home"
 					element={
-						isAuthenticated ? <Home /> : <Navigate to="/" replace />
+					isAuthenticated ? <Home /> : <Navigate to="/" replace />
 					}
 				/>
-        <Route path="*" element={<ErrorBoundary />} />
-      </Routes>
-    </Router>
-  )
+				<Route
+					path="/exclusiveContent"
+					element={
+					isAuthenticated ? <ExclusiveContent /> : <Navigate to="/" replace />
+					}
+				/>
+				<Route
+					path="/community"
+					element={
+					isAuthenticated ? <Community /> : <Navigate to="/" replace />
+					}
+				/>
+				<Route
+					path="/videos"
+					element={
+					isAuthenticated ? <Videos /> : <Navigate to="/" replace />
+					}
+				/>
+				<Route path="*" element={<ErrorBoundary />} />
+			</Routes>
+		</Router>
+	)
 }
 
 export default App
