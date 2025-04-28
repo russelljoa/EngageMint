@@ -1,5 +1,5 @@
 # EngageMint
-EasyA x Harvard Polkadot Hackathon
+EasyA x Harvard X Polkadot Hackathon
 
 Allows content creators to mint their own tokens on Polkadot that the community can earn, providing incentives to interact with the creator's content.
 
